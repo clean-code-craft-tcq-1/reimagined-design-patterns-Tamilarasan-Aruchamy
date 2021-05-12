@@ -14,6 +14,7 @@ Give a summary description of Four design patterns that you choose from the foll
 - **1. Observer**
 - 
 -         **Advantage:**
+-         
 -         1. It supports the principle of loose coupling between objects that interact with each other
 -         2. It allows sending data to other objects effectively without any change in the Subject or Observer classes
 -         3. Observers can be added/removed at any point in time
