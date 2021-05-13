@@ -99,8 +99,10 @@ Convert the interface of a class into another interface clients expect. Adapter 
 
 **what the main advantage and what the the main disadvantage is of using this pattern**
 
-**advantage:** - The proxy works even if the service object isn’t ready or is not available.
-Open/Closed Principle. - You can introduce new proxies without changing the service or clients.
+**advantage:**
+•  The proxy works even if the service object isn’t ready or is not available.
+Open/Closed Principle.
+•  You can introduce new proxies without changing the service or clients.
 
 **disadvantage:**
 •  The code may become more complicated since you need to introduce a lot of new classes. 
