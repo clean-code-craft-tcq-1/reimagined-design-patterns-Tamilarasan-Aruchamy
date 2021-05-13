@@ -54,13 +54,9 @@ The State pattern allows an object to change its behavior when its internal stat
 	
 **what the main advantage and what the the main disadvantage is of using this pattern**
 
-**advantage:**
+**advantage:** To begin with, a major advantage of the state model is its capability to minimize conditional complexity. It eliminates the need for it and switches statements on objects with different behavioral requirements, unique to different state transitions. So, representing an object’s state using a finite state machine diagram simplifies the conversion of the diagram into a state design model’s types & methods.
 
-To begin with, a major advantage of the state model is its capability to minimize conditional complexity. It eliminates the need for it and switches statements on objects with different behavioral requirements, unique to different state transitions. So, representing an object’s state using a finite state machine diagram simplifies the conversion of the diagram into a state design model’s types & methods.
-
-**disadvantage:**
-
-A developer needs to write a large amount of code for the state schema. Depending on the number of different defined state transition methods and possible object states, you can write numerous methods. Thus, for N states with M transition methods, the total number of methods required will be (N+1)*M.
+**disadvantage:** A developer needs to write a large amount of code for the state schema. Depending on the number of different defined state transition methods and possible object states, you can write numerous methods. Thus, for N states with M transition methods, the total number of methods required will be (N+1)*M.
 An insurance policy with 5 different states and 5 methods for each (ignoring ListValidOperations method) requires 25 methods in total. The policy context type must also define the 5 state transition methods, increasing total methods required to 30.
 
 **Write a short summary for each of the four patterns, about half a page for each pattern (rather less than more).**
