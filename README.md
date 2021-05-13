@@ -101,7 +101,6 @@ Convert the interface of a class into another interface clients expect. Adapter 
 
 **advantage:**
 •  The proxy works even if the service object isn’t ready or is not available.
-Open/Closed Principle.
 •  You can introduce new proxies without changing the service or clients.
 
 **disadvantage:**
