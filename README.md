@@ -90,14 +90,18 @@ The main motive behind using this pattern is to convert an existing interface in
 
 # Proxy
 **what kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example**
+
 The Proxy provides a surrogate or place holder to provide access to an object. A check or bank draft is a proxy for funds in an account. A check can be used in place of cash for making purchases and ultimately controls access to cash in the issuer's account.
 
 **how the pattern works, what the basic idea of the pattern is**
+
 Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
 
 **what the main advantage and what the the main disadvantage is of using this pattern**
+
 **advantage:** - The proxy works even if the service object isn’t ready or is not available.
 Open/Closed Principle. - You can introduce new proxies without changing the service or clients.
+
 **disadvantage:**
 •  The code may become more complicated since you need to introduce a lot of new classes. 
 •  The response from the service might get delayed.
