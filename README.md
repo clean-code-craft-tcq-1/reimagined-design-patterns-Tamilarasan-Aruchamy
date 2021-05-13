@@ -68,3 +68,20 @@ The simplest approach would be to add some boolean flags and apply simple if/els
 
 Besides, all logic for each of the states would be spread across all methods. Now, this is where the State pattern might be considered to use. Thanks to the State design pattern, we can encapsulate the logic in dedicated classes, apply the Single Responsibility Principle and Open/Closed Principle, have cleaner and more maintainable code.
 
+
+# Adapter
+**what kind of problem(s) you can solve with that pattern and when you use it, maybe with a short example**
+
+The Adapter pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients. Socket wrenches provide an example of the Adapter. A socket attaches to a ratchet, provided that the size of the drive is the same. Typical drive sizes in the United States are 1/2" and 1/4". Obviously, a 1/2" drive ratchet will not fit into a 1/4" drive socket unless an adapter is used. A 1/2" to 1/4" adapter has a 1/2" female connection to fit on the 1/2" drive ratchet, and a 1/4" male connection to fit in the 1/4" drive socket.
+
+**how the pattern works, what the basic idea of the pattern is**
+Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.
+
+**what the main advantage and what the the main disadvantage is of using this pattern**
+
+**advantage:** Adapter can add functionality to many Adaptees. CustomerAdapter can be more abstract and adapter more than just customer object.
+**disadvantage:** Harder to override Adaptee behavior. Customer object behavior can’t be changed without subclassing it.
+
+**Write a short summary for each of the four patterns, about half a page for each pattern (rather less than more).**
+
+
