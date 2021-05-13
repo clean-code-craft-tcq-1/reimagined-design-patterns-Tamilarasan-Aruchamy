@@ -33,6 +33,11 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 **Write a short summary for each of the four patterns, about half a page for each pattern (rather less than more).**
 
+The observer design pattern – often abbreviated to observer pattern – is one of the most popular pattern templates for designing computer software. It provides a consistent way to define a one-to-one dependency between two or more objects in order to relay all changes made to a certain object as quickly and simply as possible. For this purpose, any objects that act as observer in this case can register with another object. The latter object – referred to as a subject – informs the registered observers as soon as it has changed.
+
+As mentioned at the start, the observer pattern in one of the GoF patterns published in “Design Patterns: Elements of Reusable Object-Oriented Software” in 1994. The more than 20 pattern solutions described for software design continue to play an important role in designing and developing computer applications.
+
+**Function of the observer pattern:**
 The observer design pattern works with two types of actors: On the one side, there is the subject – i.e. the object whose status is to be observed over the long term. On the other side, there are the observing objects (observers) that want to be informed about any changes to the subject.
 
 Without using the observer pattern, the observing objects would have to ask the subject to provide status updates at regular intervals; each individual request would be associated with corresponding computing time as well as the necessary hardware resources. The fundamental idea behind the observer pattern is to centralize the task of informing within the subject. It, therefore, maintains a list which the observers can register to join. In the event of a change, the subject informs the registered observers – one after the other – without them having to take action themselves. If an automatic status update is no longer desired for a certain, observing object, it can simply be removed from the list.
